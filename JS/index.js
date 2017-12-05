@@ -26,9 +26,9 @@ new Swiper('.swiper-container',{
                 total=slideAry.length,targetID='page';
         console.log(total);
         switch (curIn){
-            case 0:targetID+=total-3;
+            case 0:targetID+=total-2;
             break;
-            case total-1:targetID+=2;
+            case total-1:targetID+=1;
             break;
             default:targetID+=curIn;
         }
