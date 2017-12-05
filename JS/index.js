@@ -18,6 +18,7 @@ FastClick.attach(document.body);
 new Swiper('.swiper-container',{
     direction:'vertical',
     loop:true,
+    autoplay:2000,
 //    当切换结束后给展示区域添加对应的ID，由此实现对应动画效果
     onSlideChangeEnd:function (swiper) {
         var slideAry=swiper.slides,
@@ -62,5 +63,5 @@ new Swiper('.swiper-container',{
           musicMenu.className='music move';
         },false);
     }
-    window.setTimeout(controlMusic,1000);
+//     window.setTimeout(controlMusic,1000);
 }();
